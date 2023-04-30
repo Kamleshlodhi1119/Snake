@@ -1,0 +1,89 @@
+
+/* Created by kamlesh */
+
+body{
+margin: 0px;
+padding: 0px;
+}
+
+.game-canvas {
+width: 80%;
+height: 100vw;
+max-width: 500px;
+max-height: 500px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.keys {
+font-family: 'Lato', sans-serif;
+text-align: center;
+width: 80%;
+padding: 10px;
+box-sizing: border-box;
+height: 200px;
+margin: auto;
+}
+
+.up {
+position: relative;
+top: -10px;
+}
+
+.chevron::before {
+border-style: solid;
+border-width: 8px 8px 0 0;
+content: '';
+display: inline-block;
+height: 20px;
+width: 20px;
+top: 10px;
+position: relative;
+transform: rotate(-45deg);
+}
+
+.chevron.down::before {
+transform: rotate(135deg);
+top: -22px;
+}
+
+.chevron.right::before {
+transform: rotate(45deg);
+top: -18px;
+left: -5px;
+}
+
+.chevron.left::before {
+transform: rotate(225deg);
+top: -18px;
+left: 5px;
+}
+
+.arr {
+cursor: pointer;
+width: 70px;
+height: 70px;
+text-align: center;
+line-height: 100px;
+background: #6d4c41;
+color: #fff;
+font-size: 50px;
+border-right: 10px solid #7b5e57;
+border-bottom: 10px solid #5d4037;
+border-left: 10px solid #4e342e;
+border-top: 10px solid #8d6e63;
+display: inline-block;
+margin: 5px;
+transition: all 0.05s linear;
+user-select: none;
+}
+
+.arr:active {
+background: #4e342e;
+}
+
+#game-container {
+display: flex;
+flex-direction: column;
+background-color: rgba(220, 220, 220, 0.6);
+}
